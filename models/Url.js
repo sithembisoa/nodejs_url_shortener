@@ -1,10 +1,10 @@
 const mongoose = require('mongoose')
 
-const uriSchema = new mongoose.Schema({
+const urlSchema = new mongoose.Schema({
     urlCode: String,
-    logUrl: String,
+    longUrl: String,
     shortUrl: String,
-    date: {type: String, default: date.now}
+    date: {type: String, default: Date.now}
 })
 
 module.exports = mongoose.model('Url', urlSchema)
